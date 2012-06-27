@@ -1,0 +1,168 @@
+html, body, form {
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  font-family: Helvetica, Sans-Serif;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: rgb(255,255,255);
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(181,181,181,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(181,181,181,1)));
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(181,181,181,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(181,181,181,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(181,181,181,1) 100%);
+  background: radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(181,181,181,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b5b5b5',GradientType=1 );
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 72px;
+  background-color: rgba(20,20,20,0.8);
+  border-bottom: 2px solid #000;
+}
+
+h1.title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  padding-top: 8px;
+  text-shadow: #000 0 -1px 0;
+  font-style: italic;
+  font-size: 35px;
+}
+
+.description {
+  position: absolute;
+  left: 24px;
+  top: 46px;
+  padding: 0;
+  color: white;
+}
+
+.user-form {
+  position: absolute;
+  top: 23px;
+  left: 320px;
+}
+
+.user-form button {
+  position: relative;
+  top: -4px;
+}
+
+#stats-button {
+  width: 90px;
+}
+
+.right {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  z-index: 1;
+}
+
+.tools {
+  color: white;
+  width: 220px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  height: 100%;
+  background-color: rgba(20,20,20,0.9);
+  padding: 20px;
+}
+
+.tools-inner {
+  margin-top: 78px;
+}
+
+.params {
+  padding-bottom: 6px;
+}
+
+.param {
+  margin-bottom: 5px;
+}
+
+.param label {
+  margin: 0;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: #000 0 -1px 0;
+}
+
+#count-table {
+  margin-top: 10px;
+}
+
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+svg text {
+  font-family: Helvetica, Sans-Serif;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  fill: #333;
+  text-shadow: #000 0 -1px 0;
+}
+
+svg text:hover {
+  cursor: pointer;
+  fill: #009d91;
+  fill: #006acc;
+  text-shadow: #000 0 -1px 0;
+}
+
+svg line {
+  stroke: rgba(0,0,0,0.1);
+  stroke-width: 1px;
+}
+
+svg line.highlight {
+  stroke: rgba(163,0,13,0.8);
+  stroke-width: 2px;
+}
+
+#count-table tr td {
+  font-size: 12pt;
+}
+
+.cell-label {
+  font-weight: bold;
+  font-style: italic;
+}
+
+#node-count, #way-count, #relation-count {
+  padding-left: 10px;
+}
+
+.tags {
+  padding-top: 4px;
+  padding-left: 2px;
+}
+
+.tags label {
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+}
+

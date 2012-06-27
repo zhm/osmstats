@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>OSM Stats</title>
+		<script type="text/javascript" src="js/d3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.21.min.js"></script>
+    <script type="text/javascript" src="js/underscore.min.js"></script>
+    <script type="text/javascript" src="js/osmstats.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="css/jquery-ui-1.8.21.css" type="text/css" media="screen" charset="utf-8" />
+	</head>
+	<body>
+    <div class="header">
+      <h1 class="title">OpenStreetStats</h1>
+      <p class="description">
+        An experiment using <a href="http://d3js.org/">d3js</a> and the <a href="http://wiki.openstreetmap.org/wiki/Overpass_API">Overpas API</a>
+      </p>
+    </div>
+    <div class="user-form">
+      <input type="text" id="username" name="username" placeholder="Enter your OSM username" />
+      <button class="btn btn-primary" id="stats-button">Get Stats</button>
+      <button class="btn btn-info" id="test-button">Just test with @zacmcc's account</button>
+    </div>
+    <div class="right">
+      <button class="btn btn-info" id="github">View on GitHub</button>
+    </div>
+    <div class="tools" style="display:none;">
+      <div class="tools-inner">
+        <div class="params">
+          <div class="param">
+            <label>Font Size</label>
+            <div class="font-size"></div>
+          </div>
+          <div class="param">
+            <label>Link Gravity</label>
+            <div class="link-gravity"></div>
+          </div>
+          <div class="param">
+            <label>Link Distance</label>
+            <div class="link-distance"></div>
+          </div>
+          <div class="param">
+            <label>Link Charge</label>
+            <div class="link-charge"></div>
+          </div>
+          <div class="param">
+            <label>Link Strength</label>
+            <div class="link-strength"></div>
+          </div>
+        </div>
+        <hr />
+        <table id="count-table">
+          <tr>
+            <td class="cell-label">Nodes<td>
+            <td id="node-count"></td>
+          </tr>
+          <tr>
+            <td class="cell-label">Ways<td>
+            <td id="way-count"></td>
+          </tr>
+          <tr>
+            <td class="cell-label">Relations<td>
+            <td id="relation-count"></td>
+          </tr>
+        </table>
+        <hr />
+        <h3><em>Top Tags</em></h3>
+        <div class="tags"></div>
+      </div>
+    </div>
+	</body>
+</html>
