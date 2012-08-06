@@ -6,3 +6,4 @@ what's possible with the Overpass API. It fetches all edits for a user and
 determines which tags are used the most. It also finds all of the related tags for
 each tag and has an interactive force-based canvas displaying the links between
 the tags.
+
